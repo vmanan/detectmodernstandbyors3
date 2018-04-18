@@ -1,4 +1,4 @@
-// detected_aoac.cpp : Defines the entry point for the console application.
++// detected_aoac.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
@@ -32,7 +32,7 @@ int _tmain(int argc, _TCHAR* argv[])
       {
 
 		  if ( osvi.wProductType == VER_NT_WORKSTATION && osvi.dwMinorVersion >= 2) {
-                printf("OS is Windows 8 \n");
+                printf("OS is Windows 8+ \n");
 		  }
 
 		  else {
@@ -64,10 +64,10 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 		if (systemPowerCapabilities.AoAc) {
-			printf("System supports AOAC\n");
+			printf("System supports Modern System\n");
 		}
 		else {
-			printf("System DOESNT supports AOAC\n");
+			printf("System DOESNT supports  Modern System\n");
 		}
 
         return 0;
